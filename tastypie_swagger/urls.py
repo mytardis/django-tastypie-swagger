@@ -5,6 +5,8 @@ except ImportError:
 
 from .views import SwaggerView, ResourcesView, SchemaView
 
+app_name = 'tastypie_swagger'
+
 urlpatterns = [
     url(r'^$', SwaggerView.as_view(), name='index'),
     url(r'^resources/$', ResourcesView.as_view(), name='resources'),
